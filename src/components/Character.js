@@ -69,4 +69,4 @@ const fetchData = () => {
   return content;
 }
 
-export default Character;
+export default React.memo(Character);
