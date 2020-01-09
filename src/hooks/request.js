@@ -22,6 +22,7 @@ export const useRequest = (url, dependencies) => {
         console.log(err);
         setIsLoading(false);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, dependencies);
 
   return [isLoading, fetchedData];
